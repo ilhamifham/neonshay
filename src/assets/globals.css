@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-heading: var(--font-montserrat);
+  --font-text: var(--font-openSans);
+}
+
+html {
+  @apply antialiased h-full;
+}
+
+body {
+  @apply font-text min-w-80 h-full;
+}
