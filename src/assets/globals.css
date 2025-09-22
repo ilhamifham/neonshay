@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-heading: var(--font-montserrat);
-  --font-text: var(--font-openSans);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 html {
@@ -10,5 +10,5 @@ html {
 }
 
 body {
-  @apply font-text min-w-80 h-full;
+  @apply font-body min-w-80 h-full;
 }

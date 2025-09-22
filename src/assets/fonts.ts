@@ -1,13 +1,13 @@
-import { Montserrat, Open_Sans } from "next/font/google";
+import { Outfit, Poppins } from "next/font/google";
 
-export const headingFont = Montserrat({
-  variable: "--font-montserrat",
-  weight: ["700"],
+export const headingFont = Outfit({
+  variable: "--font-heading",
+  weight: ["600"],
   subsets: ["latin"],
 });
 
-export const bodyFont = Open_Sans({
-  variable: "--font-openSans",
-  weight: ["400", "500", "600"],
+export const bodyFont = Poppins({
+  variable: "--font-body",
+  weight: ["400", "500"],
   subsets: ["latin"],
 });
