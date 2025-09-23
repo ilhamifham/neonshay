@@ -5,6 +5,14 @@
   --font-body: var(--font-body);
 }
 
+*:focus-visible,
+*::before:focus-visible,
+*::after:focus-visible {
+  outline: 2px solid dodgerblue;
+  outline-offset: 2px;
+  transition: none;
+}
+
 html {
   @apply antialiased h-full;
 }
