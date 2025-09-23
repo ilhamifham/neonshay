@@ -3,6 +3,14 @@
 @theme inline {
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
+
+  --color-base: hsl(0, 0%, 5%);
+  --color-light: hsl(0, 0%, 10%);
+  --color-lighter: hsl(0, 0%, 30%);
+
+  --color-heading: hsl(0, 0%, 95%);
+  --color-sub-heading: hsl(0, 0%, 90%);
+  --color-body: hsl(0, 0%, 70%);
 }
 
 *:focus-visible,
@@ -18,5 +26,5 @@ html {
 }
 
 body {
-  @apply font-body min-w-80 h-full;
+  @apply font-body min-w-80 h-full bg-black text-body;
 }
