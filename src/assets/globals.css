@@ -4,18 +4,16 @@
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 
-  --color-base: hsl(0, 0%, 5%);
-  --color-light: hsl(0, 0%, 10%);
-  --color-lighter: hsl(0, 0%, 30%);
+  --color-base: hsl(0, 0%, 95%);
+  --color-light: hsl(0, 0%, 90%);
+  --color-lighter: hsl(0, 0%, 70%);
 
-  --color-heading: hsl(0, 0%, 95%);
-  --color-sub-heading: hsl(0, 0%, 90%);
-  --color-body: hsl(0, 0%, 70%);
+  --color-heading: hsl(0, 0%, 5%);
+  --color-sub-heading: hsl(0, 0%, 10%);
+  --color-body: hsl(0, 0%, 30%);
 }
 
-*:focus-visible,
-*::before:focus-visible,
-*::after:focus-visible {
+*:focus-visible {
   outline: 2px solid dodgerblue;
   outline-offset: 2px;
   transition: none;
@@ -26,5 +24,5 @@ html {
 }
 
 body {
-  @apply font-body min-w-80 h-full bg-black text-body;
+  @apply font-body min-w-80 h-full bg-white text-body;
 }
