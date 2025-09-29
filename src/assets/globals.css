@@ -13,10 +13,22 @@
   --color-body: hsl(0, 0%, 30%);
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 *:focus-visible {
   outline: 2px solid dodgerblue;
   outline-offset: 2px;
   transition: none;
+  overflow: visible;
 }
 
 html {
@@ -24,5 +36,5 @@ html {
 }
 
 body {
-  @apply font-body min-w-80 h-full bg-white text-body;
+  @apply font-body min-w-80 h-full bg-light text-body;
 }
