@@ -4,13 +4,13 @@
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 
-  --color-base: hsl(0, 0%, 95%);
-  --color-light: hsl(0, 0%, 90%);
-  --color-lighter: hsl(0, 0%, 70%);
+  --color-light: hsl(0, 0%, 100%);
+  --color-base: hsl(0, 0%, 96%);
+  --color-dark: hsl(0, 0%, 92%);
 
   --color-heading: hsl(0, 0%, 5%);
-  --color-sub-heading: hsl(0, 0%, 10%);
-  --color-body: hsl(0, 0%, 30%);
+  --color-subheading: hsl(0, 0%, 10%);
+  --color-body: hsl(0, 0%, 20%);
 }
 
 @layer utilities {
@@ -36,5 +36,5 @@ html {
 }
 
 body {
-  @apply font-body min-w-80 h-full bg-light text-body;
+  @apply font-body min-w-80 h-full bg-base text-body;
 }
