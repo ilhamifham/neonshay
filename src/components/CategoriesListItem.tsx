@@ -15,7 +15,7 @@ export default function CategoriesListItem({ text, emoji }: CategoriesListProps)
 
   return (
     <li>
-      <Link href={urlLink} className={`capitalize text-subheading flex flex-row items-center gap-2 py-2 px-3 font-medium rounded-sm hover:bg-dark focus-visible:bg-dark duration-300 ${activeLink ? "bg-dark shadow" : "bg-light"}`}>
+      <Link href={urlLink} className={`capitalize flex flex-row items-center gap-2 py-2 px-3 font-medium rounded-sm active:scale-95 shadow duration-300 ${activeLink ? "bg-black text-light" : "bg-light text-subheading hover:bg-dark focus-visible:bg-dark"}`}>
         <div aria-hidden>{emoji}</div>
         <div>{text}</div>
       </Link>
