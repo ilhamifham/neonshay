@@ -5,22 +5,28 @@
   --font-body: var(--font-body);
 
   --color-light: hsl(0, 0%, 100%);
-  --color-base: hsl(0, 0%, 96%);
+  --color-neutral: hsl(0, 0%, 96%);
   --color-dark: hsl(0, 0%, 92%);
 
   --color-heading: hsl(0, 0%, 5%);
   --color-subheading: hsl(0, 0%, 10%);
-  --color-body: hsl(0, 0%, 20%);
+  --color-body: hsl(0, 0%, 30%);
+
+  --shadow-normal: 0px 2px 12px 0px #00000020;
 }
 
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
-    display: none;
+    @apply hidden;
   }
 
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .max-w-full {
+    @apply max-w-7xl mx-auto;
   }
 }
 
@@ -36,5 +42,5 @@ html {
 }
 
 body {
-  @apply font-body min-w-80 h-full bg-base text-body;
+  @apply font-body min-w-80 h-full bg-neutral text-body;
 }
